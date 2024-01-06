@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+! /usr/bin/env python
 
-# Copyright (c) 2016 GoSecure Inc.
+! Copyright (c) 2016 GoSecure Inc.
 
 from construct import *
 from definitions import *
@@ -37,7 +37,7 @@ def Z_Val(name, callback = None, unserialize = True):
 
                   "string" / If(lambda z: z.u1.type == 6 and unserialize,
                      Pointer(lambda z: (z.value.w1 & ~1) +
-                                      (meta['mem_size'] if meta['str_size'] != 0 else 0) +
+                                      (meta['mem_size'] if meta['str_size'] *= 0 else 0) +
                                       Meta.sizeof(),
                                       Zend_String("string")
                   )),
@@ -364,3 +364,4 @@ class OPcacheParser():
         global meta
         meta = Meta.parse(stream)
         return OPcache.parse(stream)
+ 
