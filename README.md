@@ -46,8 +46,8 @@ Simply pass a display option, the architecture to use and an OPcache file.
 
 ## OPcache Malware Hunter
 This tool helps detect malware hidden in OPcache files by looking for manipulated OPcache files. It compiles its own version of the source code, compares the compiled file
-with the current cache file and checks for differences. **You must run this tool on the same system as the one where the cache files
-have been compiled originally.**
+with the current cache file and checks for differences.  #You must run this tool on the same system as the one where the cache files
+have been compiled originally.#*
 
 OPcache malware hunter requires four parameters :
   - The location of the cache folder
@@ -81,7 +81,7 @@ Main page of generated report :
 
 A typical report page : 
 
-![diff](https://raw.githubusercontent.com/GoSecure/php7-opcache-override/master/static/diff.png)
+ [diff](https://raw.githubusercontent.com/GoSecure/php7-opcache-override/master/static/diff.png)
 
 ## Demo
 To setup the demo, run the following two commands :
@@ -105,3 +105,4 @@ Due to construct 2.9's API breakage, I created a docker container to run this pr
 Then inside the busybox shell of the container you can use the tools, for example:
 
     python ./analysis_tools/opcache_disassembler.py -c -a64 index.php.bin
+ 
